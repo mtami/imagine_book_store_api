@@ -26,8 +26,26 @@ def get_random_secret_key():
     return get_random_string(50, chars)
 
 
-with open(".env", "a") as f:
-    secret_key = get_random_secret_key()
-    f.write(f"SECRET_KEY={secret_key}")
+def secret_key_set():
+    # Check if the .env file exists
+    if not os.path.isfile('.env'):
+        return False
+
+    # Open the .env file and search for a line with SECRET_KEY
+    with open('.env', 'r') as file:
+        for line in file:
+            # Strip leading/trailing whitespace and split by '='
+            parts = line.strip().split('=')
+            if len(parts) == 2 and parts[0] == 'SECRET_KEY':
+                return True
+
+    # If no matching line is found, return False
+    return False
+
+
+if not secret_key_set():
+    with open(".env", "a") as f:
+        secret_key = get_random_secret_key()
+        f.write(f"SECRET_KEY={secret_key}")
 
 

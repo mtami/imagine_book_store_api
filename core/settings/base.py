@@ -177,3 +177,7 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'  # (="username" | "email" | "username_email)
 ACCOUNT_EMAIL_VERIFICATION = 'none'  # (="mandatory" | "optional")
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+STATIC_URL = "static/"
+STATIC_ROOT = BASE_DIR / "staticfiles"
