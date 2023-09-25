@@ -12,3 +12,4 @@ django-allauth-ui==0.1.4
 django-widget-tweaks==1.5.0
 whitenoise==6.5.0
 psycopg2-binary==2.9.7
+urllib3==1.26.6

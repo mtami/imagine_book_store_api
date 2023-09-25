@@ -180,7 +180,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'  # (="mandatory" | "optional")
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles'), ]
 # Configures the staticfiles directory to serve
 # static files from /static/ on our deployment
 STATIC_ROOT = os.path.join(
