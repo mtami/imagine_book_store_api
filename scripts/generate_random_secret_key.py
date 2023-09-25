@@ -46,6 +46,6 @@ def secret_key_set():
 if not secret_key_set():
     with open(".env", "a") as f:
         secret_key = get_random_secret_key()
-        f.write(f"SECRET_KEY={secret_key}")
+        f.write(f"\nSECRET_KEY={secret_key}")
 
 
