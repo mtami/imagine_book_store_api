@@ -4,7 +4,7 @@ from .base import *  # noqa
 
 DEBUG = False
 
-ALLOWED_HOSTS = [".vercel.app", "*"]  # adjust to deployment provider base url
+ALLOWED_HOSTS = [".vercel.app", ".now.sh", "127.0.0.1", "localhost"]  # adjust to deployment provider base url
 
 DATABASES = {
     "default": {

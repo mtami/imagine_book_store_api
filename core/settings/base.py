@@ -188,3 +188,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+MEDIA_URL = "img/"
+MEDIA_ROOT = BASE_DIR / "media"
