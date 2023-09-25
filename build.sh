@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the project root directory
-cd "$(dirname "$0")"/..
+#cd "$(dirname "$0")"/..
 
 # Create a virtual environment
 echo "Creating a virtual environment..."
