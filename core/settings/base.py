@@ -180,9 +180,9 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'  # (="mandatory" | "optional")
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles'), ]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles_build'), ]
 # Configures the staticfiles directory to serve
 # static files from /static/ on our deployment
 STATIC_ROOT = os.path.join(
-    BASE_DIR, 'staticfiles', 'static')
+    BASE_DIR, 'staticfiles_build', 'static')
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"

@@ -16,9 +16,8 @@ python -m pip install --upgrade pip
 echo "Building the project..."
 python -m pip install -r requirements.txt
 
-# Make migrations
-echo "Making migrations..."
-python manage.py makemigrations --noinput
+# Apply migrations
+echo "Apply migrations..."
 python manage.py migrate --noinput
 
 # Collect static files
